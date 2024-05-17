@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Kanit, Montserrat } from "next/font/google";
 import { useScroll } from "../hooks/use-scroll";
 
@@ -10,6 +11,7 @@ const roboto = Montserrat({
 });
 
 export const Navbar = () => {
+  const router = useRouter();
   const isVisible = useScroll();
   return (
     <nav
@@ -17,7 +19,10 @@ export const Navbar = () => {
         isVisible ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >
-      <div className="flex items-center gap-4 px-8">
+      <div
+        className="flex items-center gap-4 px-8 cursor-pointer"
+        onClick={() => router.push("/")}
+      >
         <Image src="/logo.svg" alt="logo" width={40} height={40} />
         <h1 className={`text-2xl font-semibold ${kanit.className}`}>INGDATA</h1>
       </div>
@@ -35,7 +40,11 @@ export const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-slate-700">
+          <a
+            href="#"
+            className="hover:text-slate-700"
+            onClick={() => router.push("/contact")}
+          >
             Contact us
           </a>
         </li>

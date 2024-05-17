@@ -9,7 +9,7 @@ import { About } from "./components/About";
 import Image from "next/image";
 import { PT_Serif, Fira_Sans } from "next/font/google";
 import { Cards } from "./components/Cards";
-import { AuroraBackground } from "./components/ui/aurora-background";
+import { AuroraBackground } from "../components/ui/aurora-background";
 import { motion } from "framer-motion";
 import { Contact } from "./components/Contact";
 
