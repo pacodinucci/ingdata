@@ -30,7 +30,11 @@ export const Navbar = () => {
         className={`flex justify-end gap-12 px-12 py-8 ${roboto.className} text-lg font-medium antialiased`}
       >
         <li>
-          <a href="#about" className="hover:text-slate-700">
+          <a
+            href="#about"
+            className="hover:text-slate-700"
+            onClick={() => router.push("/")}
+          >
             Home
           </a>
         </li>

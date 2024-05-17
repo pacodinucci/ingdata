@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { motion } from "framer-motion";
 import { PT_Serif, Fira_Sans, Montserrat } from "next/font/google";
@@ -15,6 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const Contact = () => {
+  const router = useRouter();
   return (
     <section
       className="relative h-[80vh] flex items-center justify-center bg-blue-900/20"
@@ -46,6 +48,7 @@ export const Contact = () => {
             </div> */}
           <button
             className={`flex justify-center items-center p-6 text-white bg-blue-500 rounded-md w-1/4 ${montserrat.className} text-xl font-semibold cursor-pointer hover:bg-slate-900 transition-colors duration-300`}
+            onClick={() => router.push("/contact")}
           >
             Contact Us
           </button>
