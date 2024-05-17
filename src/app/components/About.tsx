@@ -28,7 +28,7 @@ export const About = () => {
       <div className="h-screen w-full flex items-center justify-center bg-white">
         <div className="bg-customgray h-[90%] w-[45%] flex items-center">
           <p
-            className={`text-white ${ptSerif.className} antialiased w-[80%] text-6xl px-12 tracking-normal leading-snug`}
+            className={`text-white ${ptSerif.className} antialiased w-[80%] text-5xl px-12 tracking-normal leading-snug pb-24`}
           >
             We optimize hydrocarbon exploration and production processes.
           </p>
@@ -43,7 +43,7 @@ export const About = () => {
         </div>
       </div>
       <div
-        className={`absolute top-[75%] left-[10%] w-[80%] h-[35%] bg-white text-center flex items-center text-4xl font-semibold ${firaSans.className} py-20 px-16 text-slate-900 tracking-wide leading-snug antialiased shadow-md`}
+        className={`absolute top-[75%] left-[10%] w-[80%] h-[35%] bg-white text-center flex items-center text-2xl font-semibold ${firaSans.className} py-20 px-16 text-slate-900 tracking-wide leading-snug antialiased shadow-md`}
       >
         Big Data and High Performance Computing (HPC) allow us to see beneath
         the subsurface layers and perform a comprehensive evaluation of the

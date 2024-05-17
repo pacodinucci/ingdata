@@ -48,7 +48,7 @@ export const Landing = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
       >
         <motion.p
-          className={`text-2xl mt-4 text-left ${ptSerif.className} text-4xl tracking-wide leading-snug antialiased`}
+          className={`text-[4vh] mt-4 text-left ${ptSerif.className} text-4xl tracking-wide leading-snug antialiased`}
           variants={textVariants}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
@@ -57,7 +57,7 @@ export const Landing = () => {
           largely a matter of intuition.
         </motion.p>
         <motion.div
-          className={`flex justify-center items-center p-6 bg-blue-500 rounded-md w-1/4 ${montserrat.className} text-xl font-semibold cursor-pointer hover:bg-slate-900 transition-colors duration-300`}
+          className={`flex justify-center items-center p-4 bg-blue-500 rounded-md w-1/4 ${montserrat.className} text-lg font-semibold cursor-pointer hover:bg-slate-900 transition-colors duration-300`}
           variants={buttonVariants}
           transition={{ duration: 1, ease: "easeInOut" }}
         >

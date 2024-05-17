@@ -66,13 +66,13 @@ export const Cards = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <div className="flex items-center h-full">
-              <span className="h-[130px] w-[6px] rounded-md bg-customBlue" />
+              <span className="h-[80%] w-[6px] rounded-md bg-customBlue" />
             </div>
-            <div className="flex flex-col gap-2 p-6">
-              <h2 className="font-bold text-3xl text-slate-800">
+            <div className="flex flex-col gap-2 px-6 py-2 items-start min-h-[20vh]">
+              <h2 className="font-bold text-2xl text-slate-800">
                 {data.title}
               </h2>
-              <p className="text-lg text-slate-900">{data.description}</p>
+              <p className="text-base text-slate-900">{data.description}</p>
             </div>
           </motion.div>
         ))}
