@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Kanit, Montserrat } from "next/font/google";
 import { useScroll } from "../hooks/use-scroll";
