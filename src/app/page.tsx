@@ -33,7 +33,6 @@ const Home: React.FC = () => {
         <meta name="description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Navbar /> */}
       <Landing />
       <About />
       <Cards />

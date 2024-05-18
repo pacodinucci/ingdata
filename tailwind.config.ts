@@ -24,6 +24,7 @@ const config = {
       backgroundImage: {
         contactbg: "url(/fondocontacto.png)",
         contactImage: "url(/seaoilpump2.png)",
+        aboutImage: "url(/seaoilpump.png)",
         graph: "url(/graph.png)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

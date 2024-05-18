@@ -1,0 +1,50 @@
+import { PT_Serif, Fira_Sans, Montserrat } from "next/font/google";
+
+const ptSerif = PT_Serif({ subsets: ["latin"], weight: "400" });
+
+const firaSans = Fira_Sans({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600"],
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "300", "400"],
+});
+
+const AboutPage: React.FC = () => {
+  return (
+    <div className="h-screen flex items-center justify-center bg-blue-950 text-white text-4xl font-semibold">
+      <div className="h-full w-1/2 flex flex-col justify-center items-center">
+        <div className="w-[80%]">
+          <h1
+            className={`${firaSans.className} text-blue-400 text-6xl font-bold antialiased mt-4`}
+          >
+            Aca va algo
+          </h1>
+          <h1
+            className={`${firaSans.className} text-customBlue text-4xl font-semibold mt-4 antialiased`}
+          >
+            Aca va otra cosa
+          </h1>
+          <p
+            className={`${montserrat.className} text-white text-lg font-normal mt-8 antialiased`}
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+            quibusdam non nobis magni repellendus voluptates saepe enim iure
+            perspiciatis? Provident fuga nisi, iusto dolore consequuntur quo
+            aspernatur velit corrupti eveniet incidunt amet hic, itaque,
+            laudantium repudiandae consectetur odit. Natus magni id neque, harum
+            molestias facere sapiente inventore nisi quibusdam libero excepturi
+            deserunt voluptate deleniti magnam porro ipsa unde asperiores
+            nesciunt facilis. Commodi repellendus culpa, ad iure voluptatem quos
+            facilis exercitationem.
+          </p>
+        </div>
+      </div>
+      <div className="h-full w-1/2 bg-aboutImage bg-cover bg-center" />
+    </div>
+  );
+};
+
+export default AboutPage;

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Kanit, Montserrat } from "next/font/google";
 import { useScroll } from "../hooks/use-scroll";
@@ -30,27 +31,19 @@ export const Navbar = () => {
         className={`flex justify-end gap-12 px-12 py-8 ${roboto.className} text-lg font-medium antialiased`}
       >
         <li>
-          <a
-            href="#about"
-            className="hover:text-slate-700"
-            onClick={() => router.push("/")}
-          >
+          <Link href="/" className="hover:text-slate-700">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#services" className="hover:text-slate-700">
+          <Link href="/about" className="hover:text-slate-700">
             About us
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
-            className="hover:text-slate-700"
-            onClick={() => router.push("/contact")}
-          >
+          <Link href="/contact" className="hover:text-slate-700">
             Contact us
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
