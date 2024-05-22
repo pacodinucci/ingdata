@@ -39,13 +39,13 @@ export const Cards = () => {
   ];
 
   return (
-    <div className="h-[80vh] flex flex-col gap-24 items-center pt-52">
-      <h1 className={`${firaSans.className} text-4xl font-light`}>
+    <div className="h-auto md:h-[80vh] flex flex-col gap-24 items-center mb-40 pt-24 md:pt-52">
+      <h1 className={`${firaSans.className} text-2xl md:text-4xl font-light`}>
         CUSTOMERS EXPERIENCE
       </h1>
       <motion.section
         ref={ref}
-        className="h-[60vh] flex items-end gap-12 justify-center"
+        className="h-auto md:h-[60vh] flex flex-col md:flex-row items-center md:items-end gap-12 md:gap-12 justify-center"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={{
@@ -61,7 +61,7 @@ export const Cards = () => {
         {cardsData.map((data) => (
           <motion.div
             key={data.title}
-            className="relative rounded-md w-[25%] h-[20vh] flex items-center px-4 bg-gray-50 shadow-md mb-40"
+            className="relative rounded-md w-[50%] md:w-[25%] h-auto md:h-[20vh] flex items-center px-4 bg-gray-50 shadow-md"
             variants={cardVariants}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >

@@ -25,15 +25,15 @@ export const About = () => {
 
   return (
     <section className="relative" id="about">
-      <div className="h-screen w-full flex items-center justify-center bg-white">
-        <div className="bg-customgray h-[90%] w-[45%] flex items-center">
+      <div className="h-screen w-full flex flex-col md:flex-row items-center justify-center bg-white">
+        <div className="bg-customgray h-[50%] md:h-[90%] w-full md:w-[45%] mt-8 md:mt-0 flex items-center">
           <p
-            className={`text-white ${ptSerif.className} antialiased w-[80%] text-5xl px-12 tracking-normal leading-snug pb-24`}
+            className={`text-white ${ptSerif.className} antialiased w-full md:w-[80%] text-2xl md:text-5xl px-8 md:px-12 tracking-normal leading-snug md:pb-24`}
           >
             We optimize hydrocarbon exploration and production processes.
           </p>
         </div>
-        <div className="relative w-[45%] h-[90%]">
+        <div className="relative w-full md:w-[45%] h-full md:h-[90%]">
           <Image
             src="/oilpump2.png"
             alt="ingdata"
@@ -43,7 +43,7 @@ export const About = () => {
         </div>
       </div>
       <div
-        className={`absolute top-[75%] left-[10%] w-[80%] h-[35%] bg-white text-center flex items-center text-2xl font-semibold ${firaSans.className} py-20 px-16 text-slate-900 tracking-wide leading-snug antialiased shadow-md`}
+        className={`absolute top-[30%] md:top-[75%] left-[10%] w-[80%] h-auto md:h-[35%] bg-white/90 md:bg-white text-center flex items-center text-lg md:text-2xl font-semibold ${firaSans.className} py-4 md:py-20 px-8 md:px-16 text-slate-900 tracking-wide leading-snug antialiased shadow-md`}
       >
         Big Data and High Performance Computing (HPC) allow us to see beneath
         the subsurface layers and perform a comprehensive evaluation of the

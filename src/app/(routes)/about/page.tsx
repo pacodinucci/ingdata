@@ -14,11 +14,11 @@ const montserrat = Montserrat({
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="h-screen flex items-center justify-center bg-blue-950 text-white text-4xl font-semibold">
-      <div className="h-full w-1/2 flex flex-col justify-center items-center">
-        <div className="w-[80%]">
+    <div className="h-screen flex flex-col md:flex-row items-center justify-center bg-blue-950 text-white text-4xl font-semibold">
+      <div className="h-full w-full md:w-1/2 flex items-center justify-center relative z-10 md:z-auto bg-opacity-70 md:bg-transparent bg-blue-950 p-4 md:p-0">
+        <div className="w-[80%] pt-4 md:pt-0">
           <h1
-            className={`${firaSans.className} text-blue-400 text-6xl font-bold antialiased mt-4`}
+            className={`${firaSans.className} text-blue-400 text-5xl md:text-6xl font-bold antialiased mt-4`}
           >
             Aca va algo
           </h1>
@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="h-full w-1/2 bg-aboutImage bg-cover bg-center" />
+      <div className="h-full w-full md:w-1/2 bg-aboutImage bg-cover bg-center absolute md:relative top-0 left-0 md:top-auto md:left-auto z-0 md:z-auto" />
     </div>
   );
 };

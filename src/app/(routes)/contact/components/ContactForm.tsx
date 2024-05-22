@@ -39,7 +39,10 @@ const ContactForm: React.FC = () => {
   }
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2 w-1/2">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-2 w-full md:w-1/2"
+      >
         <div className="flex space-x-2">
           <FormField
             control={form.control}
@@ -108,8 +111,8 @@ const ContactForm: React.FC = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" variant="formButton">
-          Submit
+        <Button type="submit" variant="formButton" className="w-full md:w-auto">
+          Send
         </Button>
       </form>
     </Form>

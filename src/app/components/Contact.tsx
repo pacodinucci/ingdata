@@ -22,10 +22,6 @@ export const Contact = () => {
       className="relative h-[80vh] flex items-center justify-center bg-blue-900/20"
       id="contact"
     >
-      {/* <div>
-          <h2 className="text-3xl font-bold">Contact Us</h2>
-          <p className="text-lg mt-4">Contact information...</p>
-        </div> */}
       <AuroraBackground className="absolute inset-0 w-full h-full">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -39,7 +35,7 @@ export const Contact = () => {
           className="relative flex flex-col gap-8 items-center justify-center px-4"
         >
           <div
-            className={`text-lg md:text-4xl font-bold dark:text-white text-center ${ptSerif.className}`}
+            className={`text-2xl md:text-4xl font-bold dark:text-white text-center ${ptSerif.className}`}
           >
             Are You Ready to Take Your Production Operations to the Next Level?
           </div>
@@ -47,7 +43,7 @@ export const Contact = () => {
               And this, is chemical burn.
             </div> */}
           <button
-            className={`flex justify-center items-center p-6 text-white bg-blue-500 rounded-md w-1/4 ${montserrat.className} text-xl font-semibold cursor-pointer hover:bg-slate-900 transition-colors duration-300`}
+            className={`flex justify-center items-center p-6 text-white bg-blue-500 rounded-md w-3/5 md:w-1/4 ${montserrat.className} text-xl font-semibold cursor-pointer hover:bg-slate-900 transition-colors duration-300`}
             onClick={() => router.push("/contact")}
           >
             Contact Us
